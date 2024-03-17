@@ -1,5 +1,6 @@
 # VKF_STAN
 An implementation of the Volatile Kalman Filter in STAN
+(VKF is based on this paper: Piray, P., & Daw, N. D. (2020). A simple model for learning in volatile environments. PLoS computational biology, 16(7), e1007963.)
 
 - o.csv : trial list
 - vkf_sim_recovery_subj.R : R script to simulate and recover parameters (one subject)
