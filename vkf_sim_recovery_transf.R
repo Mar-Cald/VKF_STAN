@@ -74,7 +74,7 @@ dat_mod <- list(N_trial = dat_mod$N_trial,
                 GO = dat_mod$GO,
                 rt = ifelse(dat_mod$GO == 1, dat_sim$rt_pred, 99999), #NoGo to 999999
                 minRT = min(dat_sim$rt_pred),
-                N_lik = sum(dat_mod$GO == 1), # lik on Go trials only
+                N_lik = sum(dat_mod$GO == 1 & dat_sim$rt_pred != 99999), # lik on Go trials only, 
                 N_re = 5) #number of adjustments
 
 ## sampling init
