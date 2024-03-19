@@ -134,7 +134,7 @@ model {
       
       vari[n] = w;
 
-     if (rt[n] != 99999 && GO[n] == 1){
+     if (GO[n] == 1 && rt[n] != 9999){
 	 T = rt[n] - ndt + u[subj[n], 4];  // deicision time = rt - non-decision time
 	 mu = intercept + u[subj[n], 1] + sigmoid(predictions[n]) * (beta + u[subj[n],2]);
     
