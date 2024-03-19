@@ -12,11 +12,13 @@ RTs (shifted-lognormal distribution)
 - vkf_sim_recovery.R : R script to simulate and recover parameters (multiple subjects)
 - model_file_sim.stan : simulation (multiple subjects)
 - model_file_recovery.stan : recovery (multiple subj, hierarchical model, non-centered parameterization)
+- model_file_recovery_transf.R :  recovery (multiple subj, hierarchical model, non-centered parameterization, transf on omega and sigma_v)
 
 ## Example Go-NoGo task
 RTs (shifted-lognormal distribution)
 (filter Go trials when computing the likelihood)
+- model_fule_sim_go_nogo.stan : sim just go RT
 - model_file_transf.stan : hierachical model (non-centered parameterization) and sigmoid and exp transformation for sigma_v and omega 
-- vkf_sim_recovery_transf.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
+- vkf_sim_recovery_transf_go_nogo.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
 
 
