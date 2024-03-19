@@ -17,7 +17,7 @@ RTs (shifted-lognormal distribution)
 ## Example Go-NoGo task
 RTs (shifted-lognormal distribution)
 (filter Go trials when computing the likelihood)
-- model_fule_sim_go_nogo.stan : sim just go RT
+- model_file_sim_go_nogo.stan : sim just go RT
 - model_file_transf.stan : hierachical model (non-centered parameterization) and sigmoid and exp transformation for sigma_v and omega 
 - vkf_sim_recovery_transf_go_nogo.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
 
