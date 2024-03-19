@@ -10,6 +10,11 @@ An implementation of the Volatile Kalman Filter in STAN.
 - model_file_recovery_subj.stan : recovery (one subj)
 - vkf_sim_recovery.R : R script to simulate and recover parameters (multiple subjects)
 - model_file_sim.stan : simulation (multiple subjects)
-- model_file_recovery.stan : recovery (multiple subj)
+- model_file_recovery.stan : recovery (multiple subj, hierarchical model, non-centered parameterization)
+
+## Example Go-NoGo task 
+(filter Go trials when computing the likelihood)
+- model_file_transf.stan : hierachical model with sigmoid and exp transformation for sigma_v and omega respectively (non-centered parameterization)
+- vkf_sim_recovery_gonogo.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
 
 
