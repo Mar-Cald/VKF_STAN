@@ -21,6 +21,6 @@ RTs (shifted-lognormal distribution)
 - vkf_sim_recovery_transf_go_nogo.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
 
 
-## Feel free to add model files/scripts that could be useful for other people (i.e., examples from other tasks, other response models, whatever..)
+### Feel free to add model files/scripts that could be useful for other people (i.e., examples from other tasks, other response models, whatever..)
 
 
