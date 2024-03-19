@@ -108,8 +108,8 @@ model {
 
   // vkf model priors
   // omega
-  target += normal_lpdf(omega | 0, 8); #exp
-  target += normal_lpdf(sigma_v | 0, 8); #sigmoid
+  target += normal_lpdf(omega | 0, 8); //exp
+  target += normal_lpdf(sigma_v | 0, 8); //sigmoid
 
   for (n in 1:N_subj*N_trial) {
     
@@ -134,7 +134,7 @@ model {
       
       vari[n] = w;
 
-     if (rt[n] != 999 && GO[n] == 1){
+     if (rt[n] != 99999 && GO[n] == 1){
 	 T = rt[n] - ndt + u[subj[n], 4];  // deicision time = rt - non-decision time
 	 mu = intercept + u[subj[n], 1] + sigmoid(predictions[n]) * (beta + u[subj[n],2]);
     
