@@ -12,7 +12,6 @@ RTs (shifted-lognormal distribution)
 - vkf_sim_recovery.R : R script to simulate and recover parameters (multiple subjects)
 - model_file_sim.stan : simulation (multiple subjects)
 - model_file_recovery.stan : recovery (multiple subj, hierarchical model, non-centered parameterization)
-- model_file_recovery_transf.R :  recovery (multiple subj, hierarchical model, non-centered parameterization, transf on omega and sigma_v)
 
 ## Example Go-NoGo task
 RTs (shifted-lognormal distribution)
