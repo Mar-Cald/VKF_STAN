@@ -17,6 +17,6 @@ RTs (shifted-lognormal distribution)
 RTs (shifted-lognormal distribution)
 (filter Go trials when computing the likelihood)
 - model_file_transf.stan : hierachical model (non-centered parameterization) and sigmoid and exp transformation for sigma_v and omega 
-- vkf_sim_recovery_gonogo.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
+- vkf_sim_recovery_transf.R : R script to simulate and recover parameters (multiple subjects), add adapt_delta
 
 
