@@ -20,10 +20,10 @@ ipak(packages)
 
 
 # Simulation VKF multiple subjects ---------------
-u <- read_csv("u.csv") # Trial list
+o <- read_csv("o.csv") # Trial list
 n_subj <- 30 #set number of subjects
 n_trial<- 448 # number of trials/subj
-go_dat <- rep(u$GO,n_subj) # repeat trial list for each subject
+go_dat <- rep(o$GO,n_subj) # repeat trial list for each subject
 
 ## data 
 dat_mod <- list(N_trial = n_trial,
