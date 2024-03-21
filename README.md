@@ -1,9 +1,8 @@
 # VKF_STAN
 An implementation of the Volatile Kalman Filter in STAN. 
-#### N.B. In this implementation the initial volatility is fixed.
-
-
 VKF is based on this paper: Piray, P., & Daw, N. D. (2020). A simple model for learning in volatile environments. PLoS computational biology, 16(7), e1007963.
+
+#### N.B. In this implementation the initial volatility is fixed.
 
 ## Example assuming a response on both type of trials
 RTs (shifted-lognormal distribution)
