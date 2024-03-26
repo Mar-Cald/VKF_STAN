@@ -76,7 +76,7 @@ model {
   real v0 = 4; // Initial volatility
   
   real v = v0;  // Initialize volatilities
-  real w = omega; // Initialize posterior variances
+  real w = exp(omega); // Initialize posterior variances
   real m = 0; // Initialize predictions
   
   vector[N_trial * N_subj] predictions;
