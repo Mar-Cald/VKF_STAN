@@ -97,7 +97,7 @@ generated quantities {
       // loop across subj
       tn = n < (N_trial * N_subj) ? n : n-1;
       v = subj[n] != subj[tn+1] ? v0 : v; // Initialize volatilities
-      w = subj[n] != subj[tn+1] ? w : w;  // Initialize posterior variances
+      w = subj[n] != subj[tn+1] ? omega : w;  // Initialize posterior variances
       m = subj[n] != subj[tn+1] ? 0 : m; // Initialize predictions
       
       }
