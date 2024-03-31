@@ -62,7 +62,7 @@ generated quantities {
   real v0 = 4; // as estimated by ideal obs
   
   real v = v0;  // Initialize volatilities
-  real w = omega; // Initialize posterior variances
+  real w = omega + u_om[subj[1]]; // Initialize posterior variances
   real m = 0; // Initialize predictions
 
   vector[N_trial * N_subj] predictions;
@@ -102,7 +102,7 @@ generated quantities {
       // loop across subj
       tn = n < (N_trial * N_subj) ? n : n-1;
       v = subj[n] != subj[tn+1] ? v0 : v; // Initialize volatilities
-      w = subj[n] != subj[tn+1] ? omega : w;  // Initialize posterior variances
+      w = subj[n] != subj[tn+1] ? omega + u_om[subj[n]] : w;  // Initialize posterior variances
       m = subj[n] != subj[tn+1] ? 0 : m; // Initialize predictions
       
       }
