@@ -72,7 +72,7 @@ model {
   real v0 = 4; // Initial volatility
   
   real v = v0;  // Initialize volatilities
-  real w = omega; // Initialize posterior variances
+  real w = omega + u[subj[1], 3] ; // Initialize posterior variances
   real m = 0; // Initialize predictions
   
   vector[N_trial * N_subj] predictions;
@@ -139,7 +139,7 @@ model {
     tn = n < (N_trial * N_subj) ? n : n-1;
   
     v = subj[n] != subj[tn+1] ? v0 : v; // Initialize volatilities
-    w = subj[n] != subj[tn+1] ? omega : w;  // Initialize posterior variances
+    w = subj[n] != subj[tn+1] ? omega + u[subj[n], 3] : w;  // Initialize posterior variances
     m = subj[n] != subj[tn+1] ? 0 : m; // Initialize predictions
 
       }
