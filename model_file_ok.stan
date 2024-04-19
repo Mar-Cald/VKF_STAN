@@ -30,7 +30,7 @@ parameters {
   
   // volatile kalman filter parameters
   real omega;
-  real<lower = -4, upper = 4> sigma_v;
+  real sigma_v;
 
 
   // regression model parameters
@@ -113,8 +113,8 @@ model {
 
   // vkf model priors
   // omega
-  target += student_t_lpdf(omega |2,  2.5, 1);
-  target += student_t_lpdf(sigma_v|2, 0, 1);
+  target += normal_lpdf(omega |1, 1);
+  target += normal_lpdf(sigma_v|0, 1);
 
   for (n in 1:N_subj*N_trial) {
     
