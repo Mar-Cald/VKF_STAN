@@ -13,12 +13,4 @@ RTs (shifted-lognormal distribution), v0 fixed
 - model_file_sim.stan : simulation (multiple subjects)
 - model_file_recovery.stan : recovery (multiple subj, hierarchical model, non-centered parameterization)
 
-## Example Go-NoGo task 
-RTs (shifted-lognormal distribution) + Bernoulli
-.....
-
-
-### If you notice errors please let me know. 
-Feel free to add model files/scripts that could be useful for other people (i.e., examples from other tasks, other response models, whatever..)
-
 
